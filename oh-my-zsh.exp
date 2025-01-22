@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+
+spawn sh -c "curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh"
+
+expect {
+    -re "Do you want to change your default shell to zsh\? \[Y/n]" {
+        send "Y\r"
+        exp_continue  # Continue expecting more output
+    }
+    eof {
+        puts "Installation complete!"
+    }
+}
