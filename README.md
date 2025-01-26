@@ -12,4 +12,11 @@
   - At the end of a command -> to run the command in the background: `bash example.sh &`
   - In betweeen to commands (double) -> to run one command after another as long as the previous commands succeeds: `mkdir test && cd test`
   - Combining StdOut andf StdErr: `command 2>&1 | another_command`
-  - 
+- Shell within a shell. Example:
+  - `var1="This is the time `date`"
+  - `echo $var1`
+  - Equivalent `var2=This is the time $(date)`
+- Indexing
+  - Bash is zero indexing
+  - Zsg is one indexing
+- The active shell can be found with `echo $0`
