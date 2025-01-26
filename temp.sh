@@ -31,6 +31,8 @@ declare -A ex_dict=([Peru]="Lima" [Ecuador]="Quito") # Creating  dictionary
 echo ${ex_dict[Peru]} # Getting a value based on a key
 echo ${!ex_dict[@]} # Getting all the keys from the associative array (a.k. dicitonary)
 
+var_x=$(ls -la) # Capturing the output of a command into a variable
 
+echo $var_x
 
 
