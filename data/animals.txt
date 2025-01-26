@@ -1,0 +1,9 @@
+cat
+dog
+horse
+zebra
+cow
+pig
+lamb
+wolf
+elephant
